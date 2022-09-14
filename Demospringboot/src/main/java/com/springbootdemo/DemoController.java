@@ -15,6 +15,11 @@ public class DemoController {
 	public String getMessage() {
 		return"Hello World";
 	}
+	
+	@GetMapping("/newmessage")
+	public String getnewMessage() {
+		return"Hello World New";
+	}
 	@GetMapping("/{num}")
 	public String isPrime(@PathVariable int num) {
 		
